@@ -8,10 +8,10 @@ layout: page
 <h2>Skills</h2>
 
 <ul class="skills">
-	<li><a href="https://www.python.org/">Python</a>, <a href="https://julialang.org/">Julia</a>, <a href="https://www.rust-lang.org/">Rust</a>, and <a href="https://www.rstudio.com/">R</a></li>
+	<li><a href="https://www.python.org/">Python</a>, <a href="https://www.rust-lang.org/">Rust</a>, <a href="https://julialang.org/">Julia</a>, and <a href="https://www.rstudio.com/">R</a></li>
 	<li>Jupyter Lab, Jupyter Hub, Kaggle and git</li>
 	<li>Fortran, C</li>
-	<li>OS: Arch Linux, Rocky Linux, Centos 7, Fedora and Opensuse Leap</li>
+	<li>OS: Arch Linux, Opensuse Leap, AlmaLinux, Centos 7 and Ubuntu</li>
 </ul>
 
 <h2>Academic interests</h2>
@@ -24,7 +24,7 @@ layout: page
 
 <h2>Sports interests</h2>
 <ul class="Sports interests">
-	<li>Surf, mountaineering and computer games.</li>
+	<li>Surf, body-building, mountaineering and computer games.</li>
 </ul>
 
 <h2>Job experience</h2>
