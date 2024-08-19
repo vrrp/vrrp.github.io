@@ -38,7 +38,7 @@ layout: page
  <table align="center" width="600" height="80" cellspacing="0" cellpadding="0" border="0" bgcolor="#FFFFFF">
   <tr ALIGN=center style="font-family:Times New Roman;color:#FFFFFF">
     <td><a href="https://www.unmsm.edu.pe/"><img src="/assets/images/unmsm_logo.jpg" alt="UNSMS" style="width:80px;height:80px;"></a></td>
-    <td><a href="https://unac.edu.pe/"><img src="/assets/images/unac.jpg" alt="UNSMS" style="width:80px;height:80px;"></a></td>
+    <td><a href="https://unac.edu.pe/"><img src="/assets/images/unac.jpg" alt="UNAC" style="width:80px;height:80px;"></a></td>
     <td><a href="https://cita.utec.edu.pe/"><img src="/assets/images/utec_logo.png" alt="UTEC" style="width:160px;height:60px;"></a></td>
     <td><a href="https://cs.utec.edu.pe/khipu/#/index"><img src="/assets/images/khipu_logo.png" alt="KHIPU" style="width:80px;height:80px;"></a></td>
   </tr>
