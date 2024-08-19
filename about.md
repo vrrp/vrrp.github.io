@@ -9,9 +9,9 @@ layout: page
 
 <ul class="skills">
 	<li><a href="https://www.python.org/">Python</a>, <a href="https://www.rust-lang.org/">Rust</a>, <a href="https://julialang.org/">Julia</a>, and <a href="https://www.rstudio.com/">R</a></li>
-	<li>Jupyter Lab, Jupyter Hub, Kaggle and git</li>
-	<li>Fortran, C</li>
-	<li>OS: Arch Linux, Opensuse Leap, AlmaLinux, Centos 7 and Ubuntu</li>
+	<li><a href="https://jupyter.org/">Jupyter Lab</a>, <a href="https://jupyter.org/hub">Jupyter Hub</a>, <a href="https://www.kaggle.com/">Kaggle</a> and <a href="https://git-scm.com/">git</a></li>
+	<li><a href="https://fortran-lang.org/">Fortran>/a>, <a href="https://www.gnu.org/software/gcc/">C</a></li>
+	<li>OS: <a href="https://archlinux.org/">Arch Linux</a>, <a href="https://get.opensuse.org/">Opensuse Leap</a>, <a href="https://almalinux.org/">Alma Linux</a>, <a href="https://rockylinux.org/">Rocky Linux</a> and <a href="https://ubuntu.com/">Ubuntu</a></li>
 </ul>
 
 <h2>Academic interests</h2>
@@ -40,7 +40,7 @@ layout: page
     <td><a href="https://www.unmsm.edu.pe/"><img src="/assets/images/unmsm_logo.jpg" alt="UNSMS" style="width:80px;height:80px;"></a></td>
     <td><a href="https://unac.edu.pe/"><img src="/assets/images/unac.png" alt="UNAC" style="width:80px;height:100px;"></a></td>
     <td><a href="https://cita.utec.edu.pe/"><img src="/assets/images/utec_logo.png" alt="UTEC" style="width:160px;height:60px;"></a></td>
-    <td><a href="https://cs.utec.edu.pe/khipu/#/index"><img src="/assets/images/khipu_logo.png" alt="KHIPU" style="width:80px;height:80px;"></a></td>
+   <!-- <td><a href="https://cs.utec.edu.pe/khipu/#/index"><img src="/assets/images/khipu_logo.png" alt="KHIPU" style="width:80px;height:80px;"></a></td>-->
   </tr>
  </table> 
 
