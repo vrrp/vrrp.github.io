@@ -44,7 +44,7 @@ layout: page
   </tr>
  </table> 
 
- <table align="center" width="600" height="80" cellspacing="0" cellpadding="0" border="0" bgcolor="#FFFFFF">
+ <table align="center" width="500" height="80" cellspacing="0" cellpadding="0" border="0" bgcolor="#FFFFFF">
   <tr ALIGN=center style="font-family:Times New Roman;color:#FFFFFF">
     <td><a href="https://www.gob.pe/senamhi"><img src="/assets/images/senamhi_logo.jpg" alt="SENAMHI" style="width:80px;height:80px;"></a></td>
     <td><a href="https://www.gob.pe/igp"><img src="/assets/images/igp_logo.png" alt="IGP" style="width:80px;height:80px;"></a></td>
