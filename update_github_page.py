@@ -55,9 +55,9 @@ path_now = os.getcwd()
 
 time = dt.datetime.now()
 date = time.strftime("%d-%B-%Y")
+times= time.strftime("%H:%M:%S")
+mensaje = times+" "+date
 #year = date.year; month=date.month; day=date.day
-print(date)
-exit()
 """
 cp=cmd.run("echo 'Actualizando repositorio'", check=True, shell=True)
 
@@ -79,6 +79,6 @@ cmd.run("git push -u origin master", check=True, shell=True)
 
 os.system("git init")
 os.system("git add .")
-os.system("git commit -m 'up yml'")
-os.system("git push origin master")
+os.system(f"git commit -m '{mensaje}'")
+os.system("git push origin main")
 
