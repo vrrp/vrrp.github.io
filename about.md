@@ -35,7 +35,7 @@ layout: page
 <a href="https://www.gob.pe/senamhi"><img src="/assets/images/senamhi_logo.jpg" alt="SENAMHI" style="width:80px;height:80px;"></a>
 <a href="https://cita.utec.edu.pe/"><img src="/assets/images/utec_logo.png" alt="UTEC" style="width:110px;height:30px;"></a>
 -->
- <table align="center" width="600" height="80" cellspacing="0" cellpadding="0" border="0" bgcolor="#FFFFFF">
+ <table align="center" width="400" height="80" cellspacing="0" cellpadding="0" border="0" bgcolor="#FFFFFF">
   <tr ALIGN=center style="font-family:Times New Roman;color:#FFFFFF">
     <td><a href="https://www.unmsm.edu.pe/"><img src="/assets/images/unmsm_logo.jpg" alt="UNSMS" style="width:80px;height:80px;"></a></td>
     <td><a href="https://unac.edu.pe/"><img src="/assets/images/unac.png" alt="UNAC" style="width:80px;height:80px;"></a></td>
@@ -44,9 +44,9 @@ layout: page
   </tr>
  </table> 
 
- <table align="center" width="500" height="80" cellspacing="0" cellpadding="0" border="0" bgcolor="#FFFFFF">
+ <table align="center" width="400" height="80" cellspacing="0" cellpadding="0" border="0" bgcolor="#FFFFFF">
   <tr ALIGN=center style="font-family:Times New Roman;color:#FFFFFF">
-    <td><a href="https://www.gob.pe/senamhi"><img src="/assets/images/senamhi_logo.jpg" alt="SENAMHI" style="width:80px;height:80px;"></a></td>
+    <td><a href="https://www.gob.pe/senamhi"><img src="/assets/images/senamhi_logo.jpg" alt="SENAMHI" style="width:90px;height:80px;"></a></td>
     <td><a href="https://www.gob.pe/igp"><img src="/assets/images/igp_logo.png" alt="IGP" style="width:80px;height:80px;"></a></td>
     <td><a href="https://www.gob.pe/conida"><img src="/assets/images/conida.png" alt="CONIDA" style="width:80px;height:80px;"></a></td>
     <td><a href="https://www.dhn.mil.pe/"><img src="/assets/images/dhn_logo.png" alt="DHN" style="width:80px;height:80px;"></a></td>
