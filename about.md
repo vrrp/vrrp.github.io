@@ -35,11 +35,11 @@ layout: page
 <a href="https://www.gob.pe/senamhi"><img src="/assets/images/senamhi_logo.jpg" alt="SENAMHI" style="width:80px;height:80px;"></a>
 <a href="https://cita.utec.edu.pe/"><img src="/assets/images/utec_logo.png" alt="UTEC" style="width:110px;height:30px;"></a>
 -->
- <table align="center" width="450" height="80" cellspacing="0" cellpadding="0" border="0" bgcolor="#FFFFFF">
+ <table align="center" width="400" height="80" cellspacing="0" cellpadding="0" border="0" bgcolor="#FFFFFF">
   <tr ALIGN=center style="font-family:Times New Roman;color:#FFFFFF">
     <td><a href="https://www.unmsm.edu.pe/"><img src="/assets/images/unmsm_logo.jpg" alt="UNSMS" style="width:80px;height:80px;"></a></td>
     <td><a href="https://unac.edu.pe/"><img src="/assets/images/unac.png" alt="UNAC" style="width:80px;height:100px;"></a></td>
-    <td><a href="https://cita.utec.edu.pe/"><img src="/assets/images/utec_logo.png" alt="UTEC" style="width:160px;height:60px;"></a></td>
+    <td><a href="https://cita.utec.edu.pe/"><img src="/assets/images/utec_logo.png" alt="UTEC" style="width:180px;height:60px;"></a></td>
    <!-- <td><a href="https://cs.utec.edu.pe/khipu/#/index"><img src="/assets/images/khipu_logo.png" alt="KHIPU" style="width:80px;height:80px;"></a></td>-->
   </tr>
  </table> 
