@@ -24,7 +24,7 @@ layout: page
 
 <h2>Sports interests</h2>
 <ul class="Sports interests">
-	<li>Surf, body-building, mountaineering and computer games.</li>
+	<li>Pickleball, Diving, Surf, body-building, mountaineering and computer games.</li>
 </ul>
 
 <h2>Job experience</h2>
