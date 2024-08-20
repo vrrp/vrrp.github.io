@@ -11,7 +11,7 @@ layout: page
 
 <h2>Atmosphere</h2>
 <ul class="Atmosphere">
-	<li>Climatic studies of precipitation, air temperature, cloud cover and wind speed.</li>	
+	<li>Climatic studies of precipitation, air temperature, air quality, cloud cover and wind speed.</li>	
 </ul>
 
 <h2>Oceanography</h2>
