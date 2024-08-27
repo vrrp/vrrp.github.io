@@ -40,6 +40,5 @@ layout: page
             <button id="playButton">Reproducir</button>
             <button id="stopButton">Detener</button>
         </div>
-    </div>
-
-    <script src="script.js"></script>
+</div>
+<script src="script.js"></script>
