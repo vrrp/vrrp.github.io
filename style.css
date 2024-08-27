@@ -1,0 +1,100 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+.slider-container {
+    text-align: center;
+}
+
+.category-selector {
+    margin-bottom: 15px;
+}
+
+.category-selector button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin-right: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: #fff;
+}
+
+.category-selector button:hover {
+    background-color: #0056b3;
+}
+
+.slider {
+    width: 80%;
+    max-width: 800px;
+    height: auto;
+    margin-bottom: 10px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+#slider-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.controls button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#prevButton {
+    background-color: #007bff;
+    color: #fff;
+}
+
+#prevButton:hover {
+    background-color: #0056b3;
+}
+
+#nextButton {
+    background-color: #ffc107;
+    color: #000;
+}
+
+#nextButton:hover {
+    background-color: #e0a800;
+}
+
+#playButton {
+    background-color: #28a745;
+    color: #fff;
+}
+
+#playButton:hover {
+    background-color: #218838;
+}
+
+#stopButton {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+#stopButton:hover {
+    background-color: #c82333;
+}
+
