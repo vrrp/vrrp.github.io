@@ -3,39 +3,39 @@
 
 // image slides
 //-----------------------------------------------------------------------------------------
-const categories = {
-    category1: [
-        '{{ "/images/category1/img1.png" | relative_url }}',
-        '{{ "/images/category1/img2.png" | relative_url }}',
-        '{{ "/images/category1/img3.png" | relative_url }}'
+const images = {
+    categoria1: [
+        '{{ "/images/categoria1/img1.png" | relative_url }}',
+        '{{ "/images/categoria1/img2.png" | relative_url }}',
+        '{{ "/images/categoria1/img3.png" | relative_url }}'
     ],
-    category2: [
-        '{{ "/images/category2/img1.png" | relative_url }}',
-        '{{ "/images/category2/img2.png" | relative_url }}',
-        '{{ "/images/category2/img3.png" | relative_url }}'
+    categoria2: [
+        '{{ "/images/categoria2/img1.png" | relative_url }}',
+        '{{ "/images/categoria2/img2.png" | relative_url }}',
+        '{{ "/images/categoria2/img3.png" | relative_url }}'
     ],
-    category3: [
-        '{{ "/images/category3/img1.png" | relative_url }}',
-        '{{ "/images/category3/img2.png" | relative_url }}',
-        '{{ "/images/category3/img3.png" | relative_url }}'
+    categoria3: [
+        '{{ "/images/categoria3/img1.png" | relative_url }}',
+        '{{ "/images/categoria3/img2.png" | relative_url }}',
+        '{{ "/images/categoria3/img3.png" | relative_url }}'
     ]
 };
 
-let currentCategory = 'category1';
+let currentCategory = 'categoria1';
 let currentIndex = 0;
 let intervalId = null;
 
 function updateImage() {
-    document.getElementById('slider-image').src = categories[currentCategory][currentIndex];
+    document.getElementById('slider-image').src = images[currentCategory][currentIndex];
 }
 
 function nextImage() {
-    currentIndex = (currentIndex + 1) % categories[currentCategory].length;
+    currentIndex = (currentIndex + 1) % images[currentCategory].length;
     updateImage();
 }
 
 function prevImage() {
-    currentIndex = (currentIndex - 1 + categories[currentCategory].length) % categories[currentCategory].length;
+    currentIndex = (currentIndex - 1 + images[currentCategory].length) % images[currentCategory].length;
     updateImage();
 }
 
@@ -50,7 +50,7 @@ function stopSlideshow() {
     intervalId = null;
 }
 
-function selectCategory(category) {
+function changeCategory(category) {
     currentCategory = category;
     currentIndex = 0;
     updateImage();
@@ -62,9 +62,10 @@ document.getElementById('prevButton').addEventListener('click', prevImage);
 document.getElementById('playButton').addEventListener('click', playSlideshow);
 document.getElementById('stopButton').addEventListener('click', stopSlideshow);
 
-document.querySelectorAll('.category-selector button').forEach(button => {
+document.querySelectorAll('.category-button').forEach(button => {
     button.addEventListener('click', () => {
-        selectCategory(button.getAttribute('data-category'));
+        changeCategory(button.dataset.category);
     });
 });
+
 
