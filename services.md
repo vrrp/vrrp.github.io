@@ -43,5 +43,5 @@ layout: page
         </div>
     </div>
 
-    <script src="{{ '/assets/script.js' | relative_url }}"></script>
+    
 
