@@ -41,4 +41,4 @@ layout: page
             <button id="stopButton">Detener</button>
         </div>
 </div>
-<script src="{{ '/static/js/custom.js' | relative_url }}"></script>
+<script src="{{ '/static/js/custom.js' | relative_url }}"></script>"
