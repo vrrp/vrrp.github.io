@@ -42,6 +42,7 @@ layout: page
             <button id="stopButton">Stop</button>
         </div>
     </div>
+  <script src="{{ '/static/js/custom.js' | relative_url }}"></script>"
 
     
 
