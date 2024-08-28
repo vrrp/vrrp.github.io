@@ -5,19 +5,19 @@
 //-----------------------------------------------------------------------------------------
 const categories = {
     category1: [
-        'images/category1/img1.png',
-        'images/category1/img2.png',
-        'images/category1/img3.png'
+        '{{ "/images/category1/img1.png" | relative_url }}',
+        '{{ "/images/category1/img2.png" | relative_url }}',
+        '{{ "/images/category1/img3.png" | relative_url }}'
     ],
     category2: [
-        'images/category2/img1.png',
-        'images/category2/img2.png',
-        'images/category2/img3.png'
+        '{{ "/images/category2/img1.png" | relative_url }}',
+        '{{ "/images/category2/img2.png" | relative_url }}',
+        '{{ "/images/category2/img3.png" | relative_url }}'
     ],
     category3: [
-        'images/category3/img1.png',
-        'images/category3/img2.png',
-        'images/category3/img3.png'
+        '{{ "/images/category3/img1.png" | relative_url }}',
+        '{{ "/images/category3/img2.png" | relative_url }}',
+        '{{ "/images/category3/img3.png" | relative_url }}'
     ]
 };
 
