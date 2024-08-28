@@ -25,20 +25,23 @@ layout: page
 	<li>Climatic studies of snow depth and surface fluxes from snow melt (only for tropical glaciers).</li>
 </ul>
 
-<div class="slider-container">
-        <div class="category-selector">
-            <button data-category="category1">Categoría 1</button>
-            <button data-category="category2">Categoría 2</button>
-            <button data-category="category3">Categoría 3</button>
-        </div>
+<div class="category-container">
+        <button class="category-button" data-category="categoria1">Categoría 1</button>
+        <button class="category-button" data-category="categoria2">Categoría 2</button>
+        <button class="category-button" data-category="categoria3">Categoría 3</button>
+    </div>
+
+    <div class="slider-container">
         <div class="slider">
-            <img id="slider-image" src="images/category1/img1.png" alt="Image Slider">
+            <img id="slider-image" src="{{ '/images/categoria1/img1.png' | relative_url }}" alt="Image Slider">
         </div>
         <div class="controls">
-            <button id="prevButton">Anterior</button>
-            <button id="nextButton">Siguiente</button>
-            <button id="playButton">Reproducir</button>
-            <button id="stopButton">Detener</button>
+            <button id="prevButton">Previous</button>
+            <button id="nextButton">Next</button>
+            <button id="playButton">Play</button>
+            <button id="stopButton">Stop</button>
         </div>
-</div>
+    </div>
+
+    <script src="{{ '/assets/script.js' | relative_url }}"></script>
 
