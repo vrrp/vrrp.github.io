@@ -25,7 +25,7 @@ layout: page
 	<li>Climatic studies of snow depth and surface fluxes from snow melt (only for tropical glaciers).</li>
 </ul>
 
-<div class="category-container">
+    <div class="category-container">
         <button class="category-button" data-category="categoria1">Categoría 1</button>
         <button class="category-button" data-category="categoria2">Categoría 2</button>
         <button class="category-button" data-category="categoria3">Categoría 3</button>
@@ -42,7 +42,7 @@ layout: page
             <button id="stopButton">Stop</button>
         </div>
     </div>
-  <script src="{{ '/static/js/custom.js' | relative_url }}"></script>"
+    <script src="{{ '/static/js/custom.js' | relative_url }}"></script>"
 
     
 
