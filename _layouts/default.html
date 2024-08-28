@@ -12,14 +12,14 @@ layout: compress
     <meta charset="utf-8">
     <meta http-equiv=X-UA-Compatible content="IE=edge,chrome=1">
     <meta name=viewport content="width=device-width, initial-scale=1">
-
-    <meta name=description content="{{ site.bio }}">
+    
     <meta name=author content="{{ site.name }}">
+    <meta name=description content="{{ site.bio }}">"
     <meta property="og:image" content="{{ site.url }}/{{ site.picture }}">
+    <meta property="og:image" content="{{ site.url }}/{{ site.picture2 }}">
     <meta property="og:type" content="profile">
 
-    {% seo %}
-    
+    {% seo %}    
     {% include favicon.html %}
 
     <link rel="canonical" href="{{ site.url }}{{ page.url | replace:'index.html','' }}">
@@ -32,7 +32,7 @@ layout: compress
 
    <!-- Load an icon library -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!--para iconos -->
-  </head>
+</head>
 
 <body>
     <div class="wrapper-{% if site.width == "normal" %}normal{% elsif site.width == "large" %}large{% endif %}">
