@@ -25,18 +25,5 @@ layout: page
 	<li>Climatic studies of snow depth and surface fluxes from snow melt (only for tropical glaciers).</li>
 </ul>
 
-<div class="slider-container">
-        <div class="slider">
-            <img id="slider-image" src="images/image1.png" alt="Image Slider">
-        </div>
-        <div class="controls">
-            <button id="prevButton">Previous</button>
-            <button id="playButton">Play</button>
-            <button id="stopButton">Stop</button>
-            <button id="nextButton">Next</button>
-        </div>
-    </div>
-
-    <script src="script.js"></script>
     
 
