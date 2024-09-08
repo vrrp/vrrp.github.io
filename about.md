@@ -11,7 +11,7 @@ layout: page
 	<li><a href="https://www.python.org/">Python</a>, <a href="https://www.rust-lang.org/">Rust</a>, <a href="https://julialang.org/">Julia</a>, and <a href="https://www.rstudio.com/">R</a></li>
 	<li><a href="https://jupyter.org/">Jupyter Lab</a>, <a href="https://jupyter.org/hub">Jupyter Hub</a>, <a href="https://www.kaggle.com/">Kaggle</a> and <a href="https://git-scm.com/">git</a></li>
 	<li><a href="https://fortran-lang.org/">Fortran</a>, <a href="https://www.gnu.org/software/gcc/">C</a></li>
-	<li><a href="">JavaScript</a>, <a href="https://jekyllrb.com/">Jekyll</a>, <a href="https://shopify.github.io/liquid/basics/introduction/">Liquid</a>, <a href="">HTML</a>, and <a href="">CSS</a></li>
+	<li><a>JavaScript</a>, <a href="https://jekyllrb.com/">Jekyll</a>, <a href="https://shopify.github.io/liquid/basics/introduction/">Liquid</a>, <a>HTML</a>, and <a>CSS</a></li>
 	<li>OS: <a href="https://archlinux.org/">Arch Linux</a>, <a href="https://get.opensuse.org/">Opensuse Leap</a>, <a href="https://almalinux.org/">Alma Linux</a>, <a href="https://rockylinux.org/">Rocky Linux</a> and <a href="https://ubuntu.com/">Ubuntu</a></li>
     <li><a href="https://www.latex-project.org/">Latex</a></li>
 </ul>
