@@ -1,4 +1,27 @@
+/*Login customizations*/
+/*-----------------------------------*/
+/*-----------------------------------*/
+.login-container {
+            width: 350px; /* Ancho del contenedor */
+            height: auto; /* Ajuste automático según el contenido */
+            padding: 20px; /* Espaciado interior */
+            margin: 50px auto; /* Centrar en la página */
+            border: 2px solid #ccc; /* Borde */
+            border-radius: 10px; /* Bordes redondeados */
+            background-color: #f9f9f9; /* Color de fondo */
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Sombra */
+        }
+/* Estilos de los campos del formulario */
+        .login-container input[type="text"],
+        .login-container input[type="password"] {
+            width: 95%; /* Abarca todo el ancho del contenedor */
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }      
 
+/*-----------------------------------*/    
 /* Write your CSS here */
 /*-------------------------------------------------------------------------------------------------------------------------------*/
 .jumbotron {
