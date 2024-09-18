@@ -1,0 +1,49 @@
+<nav class="{% if page.title == "Home" %}nav-home{% else %}nav{% endif %}">
+    
+    <ul class="list">
+        {% if page.title != "Home" %}
+            <li class="item"><button class= "btn btn-default navbar-btn">
+                <a class="link" href="{{ site.url }}/"><i class="fa fa-fw fa-home"></i>Home</a>
+            </button></li>
+        {% endif %}
+
+        {% if site.training == true %}
+            {% if page.title != "Training" %}                
+                   <li class="item"><button class= "btn btn-default navbar-btn">
+                    <a class="link" href="{{ site.url }}/training">Training</a>
+                    </button></li>
+                
+            {% endif %}
+        {% endif %}
+
+        
+        {% if site.projects == true %}
+            {% if page.title != "Projects" %}
+                <li class="item"><button class= "btn btn-default navbar-btn">
+                    <a class="link" href="{{ site.url }}/projects">Projects</a>
+                </button></li>
+            {% endif %}
+        {% endif %}
+
+        {% if site.services== true %}
+            {% if page.title != "Services" %}
+                <li class="item"><button class= "btn btn-default navbar-btn">
+                    <a class="link" href="{{ site.url }}/services">Services</a>
+                </button></li>
+            {% endif %}
+        {% endif %}
+
+        
+        {% if site.about == true %}
+            {% if page.title != "About" %}
+                <li class="item"><button class= "btn btn-default navbar-btn">
+                    <a class="link" href="{{ site.url }}/about">About</a>
+                </button></li>
+            {% endif %}
+        {% endif %}
+    
+    </ul>
+
+
+
+</nav>
