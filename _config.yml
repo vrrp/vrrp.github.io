@@ -81,7 +81,7 @@ show-tags: true
 related: true
 
 # Display links for next and previous posts for the specified categories
-post-advance-links: [training]
+post-advance-links: [training,login]
 
 # show author block at the end of a post ?
 show-author: true
