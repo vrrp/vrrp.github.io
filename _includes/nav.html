@@ -32,6 +32,14 @@
                 </button></li>
             {% endif %}
         {% endif %}
+      
+      {% if site.login== true %}
+            {% if page.title != "Monitorin" %}
+                <li class="item"><button class= "btn btn-default navbar-btn">
+                    <a class="link" href="{{ site.url }}/login">Monitoring</a>
+                </button></li>
+            {% endif %}
+        {% endif %}
 
         
         {% if site.about == true %}
