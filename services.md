@@ -22,10 +22,10 @@ layout: page
 <h2>Hydrology and glaciology</h2>
 <ul class="Hydrology">
 	<li>Climatic studies of river flow</li>
-	<li>Climatic studies of snow depth and surface fluxes from snow melt (only for tropical glaciers).</li>
+	<li>Climatic studies of snow depth and surface fluxes from snow melt (just for tropical glaciers).</li>
 </ul>
 
-<b>To visualized our products in.</b><a href="https://vrrp.github.io/login/">Monitoring system</a>, email us to suscribe. 
+<p>To visualized our products in <a href="https://vrrp.github.io/login/">Monitoring system</a>, email us to suscribe.</p>
 
     
 
