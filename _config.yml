@@ -69,7 +69,7 @@ projects: false
 about: true
 services: true
 training: true
-login: false
+login: true
 
 # do you want to show the "read time" of the posts?
 read-time: true
