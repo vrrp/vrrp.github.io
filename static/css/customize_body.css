@@ -87,6 +87,14 @@ button {
   cursor: pointer;
 }
 
+.buttonLogin {
+  padding: 15px 6px;
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
 button:hover {
   background-color: #218838;
 }
