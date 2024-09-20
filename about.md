@@ -8,7 +8,7 @@ layout: page
 <h2>Skills</h2>
 
 <ul class="skills">
-	<li><a href="https://www.python.org/">Python</a>, <a href="https://www.rust-lang.org/">Rust</a>, <a href="https://julialang.org/">Julia</a>, and <a href="https://www.rstudio.com/">R</a></li>
+	<li><a href="https://www.python.org/" style="color:darkmagenta">Python</a>, <a href="https://www.rust-lang.org/" style="color:darkmagenta">Rust</a>, <a href="https://julialang.org/">Julia</a>, and <a href="https://www.rstudio.com/">R</a></li>
 	<li><a href="https://jupyter.org/">Jupyter Lab</a>, <a href="https://jupyter.org/hub">Jupyter Hub</a>, <a href="https://www.kaggle.com/">Kaggle</a> and <a href="https://git-scm.com/">git</a></li>
 	<li><a href="https://fortran-lang.org/">Fortran</a>, <a href="https://www.gnu.org/software/gcc/">C</a></li>
 	<li> JavaScript, <a href="https://jekyllrb.com/">Jekyll</a>, <a href="https://shopify.github.io/liquid/basics/introduction/">Liquid</a>, HTML, and CSS</li>
