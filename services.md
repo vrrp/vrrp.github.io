@@ -25,7 +25,7 @@ layout: page
 	<li>Climatic studies of snow depth and surface fluxes from snow melt (just for tropical glaciers).</li>
 </ul>
 
-<p>To visualized our products in <a href="https://vrrp.github.io/login/">Monitoring system</a>, email us to suscribe.</p>
+<p aling="left">To visualized our products in <a href="https://vrrp.github.io/login/">Monitoring system</a>, email us to suscribe.</p>
 
     
 
