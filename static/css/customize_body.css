@@ -80,24 +80,24 @@ input {
 
 button {
   padding: 15px 10px;
-  background-color: #9cd6aa;
+  background-color: #218838;
   color: #fff;
   border: none;
   border-radius: 5px;
-  border: 1px solid #28a745;
+  border: 1px solid  #218838;
   cursor: pointer;
 }
 
 .buttonLogin {
   padding: 10px 20px; /*vertical_px  horizontal_px*/
-  background-color: #28a745;
+  background-color: ##218838;
   color: #fff;
   border: none;
   border-radius: 5px;
   cursor: pointer;
 }
 button:hover {
-  background-color: #218838;
+  background-color: #28a745;
 }
 
 #error-message {
