@@ -20,7 +20,7 @@ document.getElementById('loginForm').addEventListener('submit', function(e) {
 
   if (user) {
     // Si el usuario es válido, redirigir a la segunda página
-    window.location.href = "/monitoring-system/index.html";
+    window.location.href = "/monitoring/index.html";
   } else {
     // Si las credenciales son incorrectas, mostrar un mensaje de error
     errorMessage.textContent = "Invalid username/email or password";
