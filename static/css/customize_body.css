@@ -49,7 +49,7 @@ body {
 /*-----------------------------------*/
 /*-----------------------------------*/
 .login-container {
-            width: 350px; /* Ancho del contenedor */
+            width: 300px; /* Ancho del contenedor */
             height: auto; /* Ajuste automático según el contenido */
             padding: 20px; /* Espaciado interior */
             margin: 50px auto; /* Centrar en la página */
