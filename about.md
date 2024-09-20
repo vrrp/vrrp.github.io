@@ -8,12 +8,12 @@ layout: page
 <h2>Skills</h2>
 
 <ul class="skills">
-	<li><a href="https://www.python.org/" style="color:darkmagenta">Python</a>, <a href="https://www.rust-lang.org/" style="color:darkmagenta">Rust</a>, <a href="https://julialang.org/">Julia</a>, and <a href="https://www.rstudio.com/">R</a></li>
-	<li><a href="https://jupyter.org/">Jupyter Lab</a>, <a href="https://jupyter.org/hub">Jupyter Hub</a>, <a href="https://www.kaggle.com/">Kaggle</a> and <a href="https://git-scm.com/">git</a></li>
-	<li><a href="https://fortran-lang.org/">Fortran</a>, <a href="https://www.gnu.org/software/gcc/">C</a></li>
-	<li> JavaScript, <a href="https://jekyllrb.com/">Jekyll</a>, <a href="https://shopify.github.io/liquid/basics/introduction/">Liquid</a>, HTML, and CSS</li>
-	<li>OS: <a href="https://archlinux.org/">Arch Linux</a>, <a href="https://get.opensuse.org/">Opensuse Leap</a>, <a href="https://almalinux.org/">Alma Linux</a>, <a href="https://rockylinux.org/">Rocky Linux</a> and <a href="https://ubuntu.com/">Ubuntu</a></li>
-    <li><a href="https://www.latex-project.org/">Latex</a></li>
+	<li><a href="https://www.python.org/" style="color:darkmagenta">Python</a>, <a href="https://www.rust-lang.org/" style="color:darkmagenta">Rust</a>, <a href="https://julialang.org/" style="color:darkmagenta">Julia</a>, and <a href="https://www.rstudio.com/" style="color:darkmagenta">R</a></li>
+	<li><a href="https://jupyter.org/" style="color:darkmagenta">Jupyter Lab</a>, <a href="https://jupyter.org/hub" style="color:darkmagenta">Jupyter Hub</a>, <a href="https://www.kaggle.com/" style="color:darkmagenta">Kaggle</a> and <a href="https://git-scm.com/" style="color:darkmagenta">git</a></li>
+	<li><a href="https://fortran-lang.org/" style="color:darkmagenta">Fortran</a>, <a href="https://www.gnu.org/software/gcc/" style="color:darkmagenta">C</a></li>
+	<li> JavaScript, <a href="https://jekyllrb.com/" style="color:darkmagenta">Jekyll</a>, <a href="https://shopify.github.io/liquid/basics/introduction/" style="color:darkmagenta">Liquid</a>, HTML, and CSS</li>
+	<li>OS: <a href="https://archlinux.org/" style="color:darkmagenta">Arch Linux</a>, <a href="https://get.opensuse.org/" style="color:darkmagenta">Opensuse Leap</a>, <a href="https://almalinux.org/" style="color:darkmagenta">Alma Linux</a>, <a href="https://rockylinux.org/" style="color:darkmagenta">Rocky Linux</a> and <a href="https://ubuntu.com/" style="color:darkmagenta">Ubuntu</a></li>
+    <li><a href="https://www.latex-project.org/" style="color:darkmagenta">Latex</a></li>
 </ul>
 
 <h2>Academic interests</h2>
