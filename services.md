@@ -35,11 +35,10 @@ Objetivos
     3. Promover el uso eficiente del agua y reducir sus péridad
     4. Mitigar los efectos del cambio climático y los desastres naturales
 </p -->
-<ul class="Hydrology">
-	<li>Climatic studies of river flow</li>
-	<li>Climatic studies of snow depth and surface fluxes from snow melt (just for tropical glaciers).</li>
-</ul>
-<p aling="left">To visualized our products in <a href="https://vrrp.github.io/login/" style="color:darkmagenta">Monitoring system</a>, email us to suscribe.</p>
+<h3 align="left"><span style="font-family:Times New Roman;font-size:90%;color:black">
+<b>We are working!. To visualized our products in <a href="https://vrrp.github.io/login/" style="color:darkmagenta">Monitoring system</a>, email us to suscribe.
+</b></span> 
+</h3>
 
     
 
