@@ -24,7 +24,7 @@ layout: page
 	    HPC, data science, data mining, database and web design.</li>
 </ul>
 
-<h2>Sports interests</h2>
+<h2>Sports interests and hobbies</h2>
 <ul class="Sports interests">
 	<li>Pickleball, Diving, Surf, body-building, mountaineering and computer games.</li>
 </ul>

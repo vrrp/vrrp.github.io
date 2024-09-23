@@ -25,6 +25,20 @@ layout: page
 	<li>Climatic studies of snow depth and surface fluxes from snow melt (just for tropical glaciers).</li>
 </ul>
 
+<h2>Monitoring System</h2>
+<!--p> La gestión de recursos hídricos es el proceso de planificar, desarrollar, distribuir y gestionar los recursos de agua
+de manera eficiente y sostenible para satisfacer las necesidades de la sociedad, la economía y el medio ambiente
+
+Objetivos
+    1. Garantizar la disponibilidad de agua para el consumo humano, agricultura, industria y ecologia
+    2. Proteger la calidad del agua y prevenir la contaminacion
+    3. Promover el uso eficiente del agua y reducir sus péridad
+    4. Mitigar los efectos del cambio climático y los desastres naturales
+</p -->
+<ul class="Hydrology">
+	<li>Climatic studies of river flow</li>
+	<li>Climatic studies of snow depth and surface fluxes from snow melt (just for tropical glaciers).</li>
+</ul>
 <p aling="left">To visualized our products in <a href="https://vrrp.github.io/login/" style="color:darkmagenta">Monitoring system</a>, email us to suscribe.</p>
 
     
