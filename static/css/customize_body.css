@@ -86,9 +86,9 @@ caption {
 }
 
 thead {
-  background-color: magenta;
+  background-color: darkmagenta;
   color: white;
-  font-size: 0.875rem;
+  font-size: 1.875rem;
   text-transform:uppercase;
   letter-spacing:2%;
 }
@@ -116,6 +116,16 @@ tbody tr:nth-child(even) {
   background-color: #eee;
 }
 
+/* styling the left side header */
+tbody tr:nth-child(even) {
+  background-color: #eee;
+}
+
+tbody th {
+  background-color: #36c;
+  color: #fff;
+  text-align: left;
+}
 /*-----------------------------------*/
 input {
   display: block;
