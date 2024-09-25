@@ -36,7 +36,7 @@ Objetivos
     4. Mitigar los efectos del cambio climático y los desastres naturales
 </p -->
 <h3 align="left"><span style="font-family:Times New Roman;font-size:90%;color:black">
-<b>We are working!. To visualized our products in <a href="https://vrrp.github.io/login/" style="color:darkmagenta">Monitoring system</a>, email us to suscribe.
+<b>We are working!. To visualized our products in <a href="https://vrrp.github.io/login/" style="color:darkmagenta">Monitoring</a>, email us to suscribe.
 </b></span> 
 </h3>
 
