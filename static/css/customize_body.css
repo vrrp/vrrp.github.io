@@ -124,7 +124,7 @@ button:hover {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
 }
 
-caption {
+.price-table caption {
   font-weight: bold;
   font-size: 24px;
   text-align: left;
@@ -132,18 +132,18 @@ caption {
   margin-bottom: 16px;
 }
 
-thead {
+.price-table thead {
   background-color: darkmagenta;
   color: white;
   text-transform:uppercase;
   letter-spacing:2%;
 }
 
-th, td {
+.price-table th, td {
   border: 1px solid black;
 }
 
-thead th {
+.price-table thead th {
   width: 25%;
   padding: 8px
 }
@@ -154,11 +154,11 @@ thead th {
   font-weight: bold;
 }
 /* Adding striped row styles to the table */
-tbody tr:nth-child(odd) {
+.price-table tbody tr:nth-child(odd) {
   background-color: #fff;
 }
 
-tbody tr:nth-child(even) {
+.price-table tbody tr:nth-child(even) {
   background-color: #eee;
 }
 
