@@ -47,7 +47,6 @@ body {
         
 /*Login customizations*/
 /*-----------------------------------*/
-/*-----------------------------------*/
 .login-container {
             width: 300px; /* Ancho del contenedor */
             height: auto; /* Ajuste automático según el contenido */
@@ -69,6 +68,23 @@ body {
         }      
 
 /*-----------------------------------*/          
+
+/* Tables customizations*/
+/*-----------------------------------*/
+caption {
+  font-weight: bold;
+  font-size: 24px;
+  text-align: left;
+  color: #333;
+  margin-bottom: 16px;
+}
+
+thead {
+  background-color: #333;
+  color: white;
+}
+
+/*-----------------------------------*/
 input {
   display: block;
   width: 100%;
