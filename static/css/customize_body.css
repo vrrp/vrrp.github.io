@@ -88,6 +88,9 @@ caption {
 thead {
   background-color: magenta;
   color: white;
+  font-size: 0.875rem;
+  text-transform:uppercase;
+  letter-spacing:2%;
 }
 
 th, td {
@@ -99,11 +102,19 @@ thead th {
   padding: 8px
 }
 
+
 .cell-highlight {
   background-color: gold;
   font-weight: bold;
 }
+/* Adding striped row styles to the table */
+tbody tr:nth-child(odd) {
+  background-color: #fff;
+}
 
+tbody tr:nth-child(even) {
+  background-color: #eee;
+}
 
 /*-----------------------------------*/
 input {
