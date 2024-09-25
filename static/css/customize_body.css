@@ -99,6 +99,12 @@ thead th {
   padding: 8px
 }
 
+.cell-highlight {
+  background-color: gold;
+  font-weight: bold;
+}
+
+
 /*-----------------------------------*/
 input {
   display: block;
