@@ -132,9 +132,9 @@ button:hover {
   margin-bottom: 16px;
 }
 
-.price-table thead {
+.price-table thead tr {
   background-color: darkmagenta;
-  color: white;
+  color: #ffffff;
   text-transform:uppercase;
   letter-spacing:2%;
 }
@@ -145,7 +145,7 @@ button:hover {
 
 .price-table thead th {
   width: 25%;
-  padding: 8px
+  padding: 12px 15px;
 }
 
 
