@@ -120,7 +120,7 @@ button:hover {
     margin: 25px 0;
     font-size: 0.9em;
     font-family: sans-serif;
-    min-width: 400px;
+    min-width: 350px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
 }
 
@@ -144,7 +144,7 @@ button:hover {
 }
 
 .price-table thead th {
-  width: 25%;
+  width: 15%;
   padding: 8px 9px;
 }
 
