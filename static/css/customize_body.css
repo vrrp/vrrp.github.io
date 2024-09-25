@@ -109,7 +109,8 @@ button:hover {
 .img-table {
   border-collapse: collapse;
   border: 1px solid black;
-  align: center;
+  margin-left: auto;
+  margin-right: auto;
   text-align: center;
   vertical-align: middle;
 }
