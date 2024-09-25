@@ -133,7 +133,7 @@ button:hover {
 }
 
 .price-table thead tr {
-  background-color: darkmagenta;
+  background-color: #db35db;
   color: #ffffff;
   text-transform:uppercase;
   letter-spacing:2%;
@@ -160,6 +160,11 @@ button:hover {
 
 .price-table tbody tr:nth-child(even) {
   background-color: #eee;
+}
+
+.price-table tbody tr.active-row {
+    font-weight: bold;
+    color: #009879;
 }
 
 /* styling the left side header 
