@@ -115,7 +115,7 @@ tbody tr:nth-child(even) {
   background-color: #eee;
 }
 
-/* styling the left side header */
+/* styling the left side header 
 tbody tr:nth-child(even) {
   background-color: #eee;
 }
@@ -124,7 +124,8 @@ tbody th {
   background-color: #36c;
   color: #fff;
   text-align: left;
-}
+}*/
+
 /*-----------------------------------*/
 input {
   display: block;
