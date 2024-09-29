@@ -30,35 +30,6 @@ document.addEventListener('DOMContentLoaded', function() {
         };
 
         Plotly.newPlot('graficoTemporal', [trace1], layout1);
-
-        // Crear el gráfico de barras
-        let categorias = {};
-        parsedData.forEach(row => {
-            let categoria = row['Categoría'];
-            if (categorias[categoria]) {
-                categorias[categoria] += 1;
-            } else {
-                categorias[categoria] = 1;
-            }
-        });
-
-        let categoriasNombres = Object.keys(categorias);
-        let categoriasValores = Object.values(categorias);
-
-        let trace2 = {
-            x: categoriasNombres,
-            y: categoriasValores,
-            type: 'bar',
-            name: 'Gráfico de Barras'
-        };
-
-        let layout2 = {
-            title: 'Gráfico de Barras por Categoría',
-            xaxis: { title: 'Categoría' },
-            yaxis: { title: 'Cantidad' }
-        };
-
-        Plotly.newPlot('graficoBarras', [trace2], layout2);
     });
 });
 
