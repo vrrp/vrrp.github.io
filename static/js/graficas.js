@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', function() {
         let layout1 = {
             title: 'GMP',
             xaxis: { title: 'Dates' },
-            yaxis: { title: 'PRCP (mm/min)' }
+            yaxis: { title: 'PRCP (mm/30min)' }
         };
 
         Plotly.newPlot('graficoTemporal', [trace1], layout1);
