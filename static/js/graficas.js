@@ -53,7 +53,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
         let layout = {
             title: 'The Global Precipitation Measurement',
-            xaxis: { title: 'Date' },
+            //xaxis: { title: 'Date' },
+            xaxis: { title: false },
             yaxis: { title: 'Prcp (mm/30min)' }
         };
         // Graficar diagrama de cajas
