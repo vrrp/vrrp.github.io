@@ -89,7 +89,8 @@ document.addEventListener('DOMContentLoaded', function() {
         };
         var box_data = [box_north, box_south];
         var layout_box = {
-          title: 'Box Plot Styling Outliers'
+          //title: 'Box Plot Styling Outliers'
+          title: false
         };
 
         // Graficar 
