@@ -12,15 +12,15 @@ layout: page_without_header
 <p>Monitoring the Earth system over, and adyacents Peruvian regions</p>
 
   <div class="category-container">
-        <button class="category-button" data-category="categoria1">FLH</button>
+        <button class="category-button" data-category="categoria1">GPMprcp</button>
         <button class="category-button" data-category="categoria2">CTT</button>
         <button class="category-button" data-category="categoria3">NO2</button>
-        <button class="category-button" data-category="categoria4">PRCP</button>
+        <button class="category-button" data-category="categoria4">FLH</button>
 </div>
 
 <div class="slider-container">
       <div class="slider">
-        <img id="slider-image" src="{{ '/images/categoria1/imagen1.png' | relative_url }}" alt="Image Slider">
+        <img id="slider-image" src="{{ '/images/categoria1/gpm_jan2019_halfH.png' | relative_url }}" alt="Image Slider">
       </div>
 
       <div class="controls">
@@ -34,9 +34,9 @@ layout: page_without_header
 <script>
     const images = {
     categoria1: [
-        '{{ "/images/categoria1/imagen1.png" | relative_url }}',
-        '{{ "/images/categoria1/imagen2.png" | relative_url }}',
-        '{{ "/images/categoria1/imagen3.png" | relative_url }}'
+        '{{ "/images/categoria1/gpm_jan2019_halfH.png" | relative_url }}',
+        '{{ "/images/categoria1/gpm_feb2019_halfH.png" | relative_url }}',
+        '{{ "/images/categoria1/gpm_mar2019_halfH.png" | relative_url }}'
     ],
     categoria2: [
         '{{ "/images/categoria2/imagen1.png" | relative_url }}',
@@ -50,9 +50,9 @@ layout: page_without_header
         '{{ "/images/categoria3/imagen4.png" | relative_url }}'
     ],
     categoria4: [
-        '{{ "/images/categoria4/gpm_jan2019_halfH.png" | relative_url }}',
-        '{{ "/images/categoria4/gpm_feb2019_halfH.png" | relative_url }}',
-        '{{ "/images/categoria4/gpm_mar2019_halfH.png" | relative_url }}'
+        '{{ "/images/categoria4/imagen1.png" | relative_url }}',
+        '{{ "/images/categoria4/imagen2.png" | relative_url }}',
+        '{{ "/images/categoria4/imagen3.png" | relative_url }}'
     ]
 };
 
