@@ -8,7 +8,7 @@ layout: page
 <h2>Skills</h2>
 
 <ul class="skills">
-	<li><a href="https://www.python.org/" style="color:darkmagenta">Python</a>, <a href="https://www.rust-lang.org/" style="color:darkmagenta">Rust</a>, <a href="https://julialang.org/" style="color:darkmagenta">Julia</a>, and <a href="https://www.rstudio.com/" style="color:darkmagenta">R</a></li>
+	<li><a href="https://www.rust-lang.org/" style="color:darkmagenta">Rust</a>, <a href="https://www.python.org/" style="color:darkmagenta">Python</a>, <a href="https://julialang.org/" style="color:darkmagenta">Julia</a>, and <a href="https://www.rstudio.com/" style="color:darkmagenta">R</a></li>
 	<li><a href="https://jupyter.org/" style="color:darkmagenta">Jupyter Lab</a>, <a href="https://jupyter.org/hub" style="color:darkmagenta">Jupyter Hub</a>, <a href="https://www.kaggle.com/" style="color:darkmagenta">Kaggle</a>, <a href="https://colab.research.google.com/#scrollTo=-gE-Ez1qtyIA" style="color:darkmagenta">Google Colab</a> and <a href="https://git-scm.com/" style="color:darkmagenta">git</a></li>
 	<li><a href="https://fortran-lang.org/" style="color:darkmagenta">Fortran</a>, <a href="https://www.gnu.org/software/gcc/" style="color:darkmagenta">C</a></li>
 	<li> JavaScript, <a href="https://jekyllrb.com/" style="color:darkmagenta">Jekyll</a>, <a href="https://shopify.github.io/liquid/basics/introduction/" style="color:darkmagenta">Liquid</a>, HTML, and CSS</li>
