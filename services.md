@@ -42,7 +42,6 @@ Objetivos
 </ul>
 
 <div class="graficas-container">
-    <p>ENSO Monitoring system</p>
     <div id="plot_timeSeries_ensoIndex"></div>
 </div>
 <script src="/static/js/plot_timeSeries_ensoIndex.js"></script>
