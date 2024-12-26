@@ -41,5 +41,10 @@ Objetivos
 </dt>
 </ul>
 
+<div class="graficas-container">
+    <h3>ENSO Monitoring system</h3>
+    <div id="plot_timeSeries_ensoIndex"></div>
+</div>
+
     
 
