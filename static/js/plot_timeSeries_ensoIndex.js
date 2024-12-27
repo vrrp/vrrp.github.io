@@ -79,7 +79,8 @@ d3.csv("/assets/data/sstoi.indices.csv", function(err, rows){
     name: 'ANOM Niño 3+4'
   }
 
-  var data = [table,trace1,trace2,trace3]
+  //var data = [table,trace1,trace2,trace3]
+  var data = [trace1,trace2,trace3]
 
   // define subplot axes
   var axis = {
@@ -95,6 +96,7 @@ d3.csv("/assets/data/sstoi.indices.csv", function(err, rows){
   var axis1 = {domain: [0.5, 1], anchor: 'y1', showticklabels: false}
   var axis2 = {domain: [0.5, 1], anchor: 'y2', showticklabels: false}
   var axis3 = {domain: [0.5, 1], anchor: 'y3'}
+
   var axis4 = {domain: [0.66, 0.98], anchor: 'x1', hoverformat: '.2f'}
   var axis5 = {domain: [0.34, 0.64], anchor: 'x2', hoverformat: '.2f'}
   var axis6 = {domain: [0.0, 0.32],  anchor: 'x3', hoverformat: '.2f'}
@@ -109,6 +111,7 @@ d3.csv("/assets/data/sstoi.indices.csv", function(err, rows){
     xaxis1: Object.assign(axis1,axis),
     xaxis2: Object.assign(axis2,axis),
     xaxis3: Object.assign(axis3,axis),
+
     yaxis1: Object.assign(axis4,axis),
     yaxis2: Object.assign(axis5,axis),
     yaxis3: Object.assign(axis6,axis)
