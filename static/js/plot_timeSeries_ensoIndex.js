@@ -52,11 +52,11 @@ d3.csv("/assets/data/sstoi.indices.csv", function(err, rows){
     tickfont: {size: 10},
   }
 
-  var axis1 = {domain: [0., 1], anchor: 'x1', showticklabels: false}
+  var axis1 = {domain: [0., 1], anchor: 'y1', showticklabels: false}
   var axis2 = {domain: [0., 1], anchor: 'y2', showticklabels: false}
   var axis3 = {domain: [0., 1], anchor: 'y3'}
 
-  var axis4 = {domain: [0.66, 0.98], anchor: 'y1', hoverformat: '.2f'}
+  var axis4 = {domain: [0.66, 0.98], anchor: 'x1', hoverformat: '.2f'}
   var axis5 = {domain: [0.34, 0.64], anchor: 'x2', hoverformat: '.2f'}
   var axis6 = {domain: [0.0, 0.32],  anchor: 'x3', hoverformat: '.2f'}
   
