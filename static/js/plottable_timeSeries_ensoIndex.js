@@ -45,7 +45,7 @@ d3.csv("/assets/data/sstoi.indices.csv", function(err, rows){
     xaxis: 'x',
     yaxis: 'y',
     //domain: {x: [0,0.4], y: [0,1]}
-    domain: {x: [0.3,0.6], y: [0,1]}
+    domain: {x: [0, 0.6], y: [0, 1]}
   }
 
 
@@ -54,7 +54,7 @@ d3.csv("/assets/data/sstoi.indices.csv", function(err, rows){
 
   // define layout
   var layout = {
-    title: {text: " ENSO MONITORING"},
+    title: {text: false},
     plot_bgcolor: 'rgba(228, 222, 249, 0.65)',
     showlegend: false,
   }
