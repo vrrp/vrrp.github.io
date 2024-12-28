@@ -66,9 +66,9 @@ d3.csv("/assets/data/sstoi.indices.csv", function(err, rows){
   // define layout
   var layout = {
     autosize: false,
-    width: 400,
+    width: 370,
     height: 450,
-    margin:{l:25, r:15, b:50, t: 90, pad:2},
+    margin:{l:25, r:15, b:10, t: 100, pad:4},
     title: {text: "Climate Variability: Oceanic Niño Index (ONI)"},
     plot_bgcolor: 'rgba(228, 222, 249, 0.65)',
     showlegend: false,
