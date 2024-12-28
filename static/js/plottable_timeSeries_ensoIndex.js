@@ -45,7 +45,7 @@ d3.csv("/assets/data/sstoi.indices.csv", function(err, rows){
     xaxis: 'x',
     yaxis: 'y',
     //domain: {x: [0,0.4], y: [0,1]}
-    domain: {x: [0, 0.6], y: [0, 1]}
+    domain: {x: [0, 1.5], y: [0, 1]}
   }
 
 
