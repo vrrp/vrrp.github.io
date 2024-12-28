@@ -5,56 +5,16 @@ d3.csv("/assets/data/sstoi.indices.csv", function(err, rows){
   return rows.map(function(row) { return row[key]; });
   }
 
-  // header values
-  var headerNames = d3.keys(rows[0]);
-  var headerValues = [headerNames[0],headerNames[4],
-                      headerNames[6],headerNames[8]];
-
-  // cell values
-  var cellValues = [];
-  for (i = 0; i < headerValues.length; i++) {
-    cellValue = unpack(rows, headerValues[i]);
-    cellValues[i] = cellValue;
-  }
-
-  // clean date
-  for (i = 0; i < cellValues[0].length; i++) {
-  var dateValue = cellValues[0][i].split(' ')[0]
-  cellValues[0][i] = dateValue
-  }
-
-  // create table
-  var table = {
-    type: 'table',
-    columnwidth: [130,130,130,150],
-    columnorder: [0,1,2,3],
-    header: {
-      values: headerValues,
-      align: "center",
-      line: {width: 1, color: 'rgb(50, 50, 50)'},
-      fill: {color: ['rgb(235, 100, 230)']},
-      font: {family: "Arial", size: 11, color: "white"}
-    },
-    cells: {
-      values: cellValues,
-      align: ["center", "center"],
-      line: {color: "black", width: 1},
-      fill: {color: ['rgb(235, 193, 238)', 'rgba(228, 222, 249, 0.65)']},
-      font: {family: "Arial", size: 10, color: ["black"]}
-    },
-    xaxis: 'x',
-    yaxis: 'y',
-    domain: {x: [0,0.4], y: [0,1]}
-  }
-
+  const getcolor = (values) => values.map(val => val >=0 ? '#b04553':'blue');
+  
   // create 1st plot
   var trace1 = {
     x: unpack(rows, 'DATE'),
     y: unpack(rows, 'ANOM'),
     xaxis: 'x1',
     yaxis: 'y1',
-    mode: 'lines',
-    line: {width: 2, color: '#05BA33'},
+    type: 'bar',
+    marker: {color:getcolor(unpack(rows, 'ANOM'))},
     name: 'ANOM Niño 1+2'
   }
   // create 2nd plot
@@ -63,8 +23,8 @@ d3.csv("/assets/data/sstoi.indices.csv", function(err, rows){
     y: unpack(rows, 'ANOM.1'),
     xaxis: 'x2',
     yaxis: 'y2',
-    mode: 'lines',
-    line: {width: 2, color: '#9748a1'},
+    type: 'bar',
+    marker: {color:getcolor(unpack(rows, 'ANOM.1'))},
     name: 'ANOM Niño 3'
   }
 
@@ -74,14 +34,13 @@ d3.csv("/assets/data/sstoi.indices.csv", function(err, rows){
     y: unpack(rows, 'ANOM.3'),
     xaxis: 'x3',
     yaxis: 'y3',
-    mode: 'lines',
-    line: {width: 2, color: '#b04553'},
+    type: 'bar',
+    marker: {color:getcolor(unpack(rows, 'ANOM.3'))},
     name: 'ANOM Niño 3+4'
   }
 
-  //var data = [table,trace1,trace2,trace3]
   var data = [trace1,trace2,trace3]
-
+  
   // define subplot axes
   var axis = {
     showline: true,
@@ -93,28 +52,29 @@ d3.csv("/assets/data/sstoi.indices.csv", function(err, rows){
     tickfont: {size: 10},
   }
 
-  var axis1 = {domain: [0.5, 1], anchor: 'y1', showticklabels: false}
-  var axis2 = {domain: [0.5, 1], anchor: 'y2', showticklabels: false}
-  var axis3 = {domain: [0.5, 1], anchor: 'y3'}
+  var axis1 = {domain: [0., 1], anchor: 'x1', showticklabels: false}
+  var axis2 = {domain: [0., 1], anchor: 'y2', showticklabels: false}
+  var axis3 = {domain: [0., 1], anchor: 'y3'}
 
-  var axis4 = {domain: [0.66, 0.98], anchor: 'x1', hoverformat: '.2f'}
+  var axis4 = {domain: [0.66, 0.98], anchor: 'y1', hoverformat: '.2f'}
   var axis5 = {domain: [0.34, 0.64], anchor: 'x2', hoverformat: '.2f'}
   var axis6 = {domain: [0.0, 0.32],  anchor: 'x3', hoverformat: '.2f'}
+  
   //var axis5 = {domain: [0.34, 0.64], anchor: 'x2', tickprefix: '$', hoverformat: '.2f'}
   //var axis6 = {domain: [0.0, 0.32], anchor: 'x3', tickprefix: '\u20BF', hoverformat: '.2f'}
 
   // define layout
   var layout = {
-    title: {text: "Oceanic Niño Index (ONI)"},
+    title: {text: "ENSO monitoring system"},
     plot_bgcolor: 'rgba(228, 222, 249, 0.65)',
     showlegend: false,
-    xaxis1: Object.assign(axis1,axis),
-    xaxis2: Object.assign(axis2,axis),
-    xaxis3: Object.assign(axis3,axis),
+    xaxis1: Object.assign(axis1, axis),
+    xaxis2: Object.assign(axis2, axis),
+    xaxis3: Object.assign(axis3, axis),
 
-    yaxis1: Object.assign(axis4,axis),
-    yaxis2: Object.assign(axis5,axis),
-    yaxis3: Object.assign(axis6,axis)
+    yaxis1: Object.assign(axis4, axis),
+    yaxis2: Object.assign(axis5, axis),
+    yaxis3: Object.assign(axis6, axis)
   }
 
   Plotly.newPlot('plot_timeSeries_ensoIndex', data, layout);
