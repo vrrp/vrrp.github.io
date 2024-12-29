@@ -42,7 +42,7 @@ Objetivos
 </ul>
 
 <div class="graficas-container">
-    <div class="center" id="plot_timeSeries_ensoIndex"></div>
+    <div class="oni" id="plot_timeSeries_ensoIndex"></div>
 	<p> Source: <a href="https://www.cpc.ncep.noaa.gov/data/indices/" style="color:darkmagenta"> Climate Prediction Center - NOAA</a></p>
 </div>
 <script src="/static/js/plot_timeSeries_ensoIndex.js"></script>
