@@ -273,7 +273,7 @@ tbody th {
 /* graficas-container */
 
 .graficas-container{
-    display:table-cell;
+   /* display:table-cell;*/
     vertical-align:middle;
 }
 
