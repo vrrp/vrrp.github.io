@@ -280,7 +280,8 @@ tbody th {
 .graficas-container .oni{
     width:100px;
     height:100px;
-    background:red;
+    justify-content: center;
+    background:none;
     margin:0 auto;
     
 }
