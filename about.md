@@ -4,7 +4,7 @@ layout: page
 ---
 <!--![Profile Image]({{ site.url }}/{{ site.picture }}) -->
 
-<H1 align="left"><span style="font-family:Times New Roman;font-size:150%;color:darkmagenta"><b>About me</b></span> </H1>
+<H1 align="left"><span style="font-family:Times New Roman;font-size:150%;color:darkmagenta"><b>About us</b></span> </H1>
 <h2>Skills</h2>
 
 <ul class="skills">
