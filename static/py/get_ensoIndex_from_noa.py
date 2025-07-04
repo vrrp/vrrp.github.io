@@ -1,5 +1,6 @@
 import requests
 import pandas as pd
+import os
 import io
 
 
@@ -14,7 +15,7 @@ def download_files_from_web(url,data_path ,output_file):
         dates = pd.date_range(start=str(iyear)+"-"+str(imonth), end=str(fyear)+"-"+str(fmonth), freq="MS")
         df.insert(0, "DATE", dates)
         #print(df.head())
-        #print(df.tail())
+        print(df.tail(3))
 
         with open(data_path+output_file, "w", encoding="utf-8") as file:
             file.write(response.text)
@@ -31,5 +32,8 @@ url = "https://www.cpc.ncep.noaa.gov/data/indices/"
 output_ersst5_file = "ersst5.nino.mth.91-20.ascii"
 output_sstoi_file = "sstoi.indices"
 
+print(os.system("tail "+data_path+output_sstoi_file+".csv"))
+
 download_files_from_web(url, data_path, output_ersst5_file)
 download_files_from_web(url, data_path, output_sstoi_file)
+
