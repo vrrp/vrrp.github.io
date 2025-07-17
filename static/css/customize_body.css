@@ -18,6 +18,37 @@ body {
   height: 100vh;
 }
 
+/* configurar contenedores deservices/monitoring system */
+/*-------------------------------------------------------*/
+.graficas-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+#map {
+    flex: 1;
+    width: 100%;
+    min-height: 300px;  /*Altura mínima para Leaflet */
+    /*height: 100%; Asegura que ocupe todo el espacio asignado */
+}
+
+.chart-container {
+	flex: 1;
+	padding: 0px;
+	display: flex;
+	flex-direction: column;
+        }
+        
+#timeSeriesChart {
+    flex: 1;
+    width: 100%;
+    min-height: 200px; /* Altura mínima para gráficos */
+    height: 100%; /* Asegura que ocupe todo el espacio asignado */
+    margin-bottom: 20px;
+}
+/*-------------------------------------------------------*/
+
 .mi-div {
   /*border: 2px solid black;  Establece un borde */
   /*margin: 20px;              Establece un margen de 20px en todos los lados */
@@ -35,7 +66,7 @@ body {
             padding: 20px;
         }
 
-        /* Estilos específicos para móviles */
+/* Estilos específicos para móviles */
         @media (max-width: 768px) {
             .contenedor {
                 margin: 20px; /* Márgenes más pequeños para móviles */
