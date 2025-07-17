@@ -41,12 +41,12 @@ Objetivos
 	<div class="chart-container">
 		<canvas id="barChart"></canvas>
 	</div>
-	<div align="center" id="tabla_ensoONI"></div>
+	<!--div align="center" id="tabla_ensoONI"></div-->
 	<!--div align="center" id="plot_timeSeries_ensoIndex"></div-->
 	<p> Data taken from <a href="https://www.cpc.ncep.noaa.gov/data/indices/" style="color:darkmagenta"> Climate Prediction Center - NOAA</a>, and dynamic visualization development by Sacha Analytics.</p>
 </div>
 <script src="/static/js/script_mapaENSO.js"></script>
-<script src="/static/js/script_tablaENSO.js"></script>
+<!--script src="/static/js/script_tablaENSO.js"></script-->
 <!--script src="/static/js/plot_timeSeries_ensoIndex.js"></script-->
 
 To visualized our products in <a href="https://vrrp.github.io/login/" style="color:darkmagenta">Monitoring</a>, email us to suscribe.
