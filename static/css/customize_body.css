@@ -29,8 +29,8 @@ body {
 #map {
     flex: 1;
     width: 100%;
-    min-height: 300px;  /*Altura mínima para Leaflet */
-    /*height: 100%; Asegura que ocupe todo el espacio asignado */
+    min-height: 100px;  /*Altura mínima para Leaflet */
+    height: 100%; /*Asegura que ocupe todo el espacio asignado */
 }
 
 .chart-container {
