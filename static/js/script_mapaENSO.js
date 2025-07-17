@@ -50,7 +50,7 @@ fetch(csvUrl)
 
 // Inicializar el mapa
 //------------------------------------------------------------------------
-        const map = L.map('map').setView([-5, -148], 2.4);
+        const map = L.map('map').setView([-5, -148], 2);
         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
         
         // limites geograficos de las regiones ENSO       
