@@ -44,8 +44,8 @@ body {
     flex: 1;
     width: 100%;
     min-height: 300px; /* Altura mínima para gráficos */
-    height: 100%; /* Asegura que ocupe todo el espacio asignado */
-    margin-bottom: 20px;
+    height: 300%; /* Asegura que ocupe todo el espacio asignado */
+    margin-bottom: 0px;
 }
 /*-------------------------------------------------------*/
 
