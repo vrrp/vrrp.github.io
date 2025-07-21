@@ -148,7 +148,7 @@ fetch(csvUrl)
     	    options: {
     	    	scales: {
     	    		y: {
-    	    		min: -4, // Límite inferior del eje Y
+    	    		min: -2, // Límite inferior del eje Y
     	    		max: 4   // Límite superior del eje Y
     	    		}}
     	    	}
