@@ -145,6 +145,13 @@ fetch(csvUrl)
             		    },
             		},
     	    },*/
+    	    options: {
+    	    	scales: {
+    	    		y: {
+    	    		min: -4, // Límite inferior del eje Y
+    	    		max: 4   // Límite superior del eje Y
+    	    		}}
+    	    	}
         });
 
         // Función para actualizar gráficos cuando se selecciona una región
