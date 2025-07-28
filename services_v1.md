@@ -38,23 +38,9 @@ Objetivos
 
 <div class="graficas-container">
 	<div id="map"></div>
-	<div id="charts">
-            <div id="time-range">
-                <h3>Intervalo de Tiempo</h3>
-                <div class="slider-container">
-                    <label>Inicio: <span id="start-date">1982-01-01</span></label>
-                    <input type="range" id="start-slider" min="0" max="521" value="0"><!-- max="365"-->
-                </div>
-                <div class="slider-container">
-                    <label>Fin: <span id="end-date">2025-06-01</span></label>
-                    <input type="range" id="end-slider" min="0" max="521" value="521">
-                </div>
-            </div>
-            <div class="chart-container">
-                <h3>Gráfico de Barras</h3>
-                <canvas id="barChart"></canvas>
-            </div>
-        </div>
+	<div class="chart-container">
+		<canvas id="barChart"></canvas>
+	</div>
 	<!--div align="center" id="tabla_ensoONI"></div-->
 	<!--div align="center" id="plot_timeSeries_ensoIndex"></div-->
 	<p> Data taken from <a href="https://www.cpc.ncep.noaa.gov/data/indices/" style="color:darkmagenta"> Climate Prediction Center - NOAA</a>, and dynamic visualization development by Sacha Analytics.</p>

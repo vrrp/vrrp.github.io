@@ -47,16 +47,6 @@ body {
     height: 300%; /* Asegura que ocupe todo el espacio asignado */
     margin-bottom: 0px;
 }
-
-#charts { padding: 20px; overflow-y: auto; }
-.chart-container { margin-bottom: 20px; }
-#time-range { margin-bottom: 20px; }
-.slider-container { margin: 10px 0; }
-canvas { max-width: 100%; }
-/*h2, h3 { margin: 10px 0; }*/
-@media (max-width: 768px) {
-            #dashboard { grid-template-columns: 1fr; grid-template-rows: 50vh auto; }
-        }
 /*-------------------------------------------------------*/
 
 .mi-div {
