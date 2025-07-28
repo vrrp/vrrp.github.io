@@ -23,7 +23,7 @@ Papa.parse(csvUrl, {
         console.log(dates[n_elem]);
 
         // Inicializar el mapa
-        const map = L.map('map').setView([-5, -148], 3);
+        const map = L.map('map').setView([-5, -148], 2);
         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
            // attribution: '© OpenStreetMap contributors'
         }).addTo(map);
