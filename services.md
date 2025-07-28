@@ -40,7 +40,7 @@ Objetivos
 	<div id="map"></div>
 	<div id="charts">
             <div id="time-range">
-                <h3>Intervalo de Tiempo</h3>
+                <h3>Period of time</h3>
                 <div class="slider-container">
                     <label>Inicio: <span id="start-date">1982-01-01</span></label>
                     <input type="range" id="start-slider" min="0" max="521" value="0"><!-- max="365"-->
@@ -51,7 +51,7 @@ Objetivos
                 </div>
             </div>
             <div class="chart-container">
-                <h3>Gráfico de Barras</h3>
+                <!--h3>Gráfico de Barras</h3-->
                 <canvas id="barChart"></canvas>
             </div>
         </div>
