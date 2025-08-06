@@ -25,11 +25,11 @@ Papa.parse(csvUrl, {
         // Colocar fondo imagen sacha en grafica de barras
          // 1. Cargar imagen PNG
          //------------------------------------------------------------------------
-         const bgImage = new Image();
-         bgImage.src = '{{ /assets/images/sacha_logo1.png | relative_url}}'; // Asegúrate que esté en la misma carpeta o usa URL
+         //const bgImage = new Image();
+         //bgImage.src = '{{ /assets/images/sacha_logo1.png | relative_url }}'; // Asegúrate que esté en la misma carpeta o usa URL
          
            // 2. Plugin para dibujar fondo
-           const imageBackgroundPlugin = {
+           /*const imageBackgroundPlugin = {
                id: 'custom_canvas_background_image',
                    beforeDraw: (chart) => {
                          if (bgImage.complete) {
@@ -43,7 +43,7 @@ Papa.parse(csvUrl, {
                            bgImage.onload = () => chart.draw();
                            }
                           }
-                         };
+                         };*/
 
         // Inicializar el mapa
         const map = L.map('map').setView([-5, -120], 2);
@@ -180,7 +180,7 @@ Papa.parse(csvUrl, {
                         max: 4   // Límite superior del eje Y
                         }}
                      },
-            plugins: [imageBackgroundPlugin] 
+            //plugins: [imageBackgroundPlugin] 
         });
 
         // Actualizar gráficos
