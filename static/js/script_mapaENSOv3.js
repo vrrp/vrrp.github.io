@@ -25,8 +25,8 @@ Papa.parse(csvUrl, {
         // Colocar fondo imagen sacha en grafica de barras
          // 1. Cargar imagen PNG
          //------------------------------------------------------------------------
-         //bgImage.src = '{{ /assets/images/sacha_logo1.png | relative_url }}'; // Asegúrate que esté en la misma carpeta o usa URL
-         const bgImage.src = '/assets/images/sacha_logo1.png'; // Asegúrate que esté en la misma carpeta o usa URL
+         bgImage.src = '{{ /assets/images/sacha_logo1.png | relative_url }}'; // Asegúrate que esté en la misma carpeta o usa URL
+         //const bgImage.src = '/assets/images/sacha_logo1.png'; // Asegúrate que esté en la misma carpeta o usa URL
          const bgImage = new Image();
          
            // 2. Plugin para dibujar fondo
