@@ -27,7 +27,7 @@ Papa.parse(csvUrl, {
          //------------------------------------------------------------------------
          const bgImage = new Image();
          //bgImage.src = '{{ /assets/images/sacha_logo1.png | relative_url }}'; // Asegúrate que esté en la misma carpeta o usa URL
-         bgImage.src = '{ /assets/images/sacha_logo1.png | relative_url }'; // Asegúrate que esté en la misma carpeta o usa URL
+         bgImage.src = '/assets/images/sacha_logo1.png | relative_url'; // Asegúrate que esté en la misma carpeta o usa URL
          
            // 2. Plugin para dibujar fondo
            const imageBackgroundPlugin = {
