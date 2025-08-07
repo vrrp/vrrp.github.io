@@ -65,7 +65,7 @@ Objetivos
 <!--script src="/static/js/script_mapaENSOv1.js"></script-->
 <!--script src="/static/js/script_mapaENSOv2.js"></script-->
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-<script src="/static/js/script_mapaENSOv3.js"></script>
+<script src="/static/js/script_mapaENSOv2.js"></script>
 
 
 <h4 align="left">Public health monitoring: Anemia case study (We are working asap!).</h4>
