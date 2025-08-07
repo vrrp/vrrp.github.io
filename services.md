@@ -36,6 +36,8 @@ Objetivos
     4. Mitigar los efectos del cambio climático y los desastres naturales
 </p -->
 <h4>Tracking the ocean part of El Niño-Southern Oscillation (ENSO) climate pattern.</h4>
+According to <a href="https://www.climate.gov/news-features/understanding-climate/climate-variability-oceanic-nino-index" style="color:darkmagenta">NOAA</a>, the blue, yellow, and red polygons correspond to the ocean temperature monitoring regions in the El Niño 1+3, 3, and 3+4 regions, respectively.
+
 <div class="graficas-container">
 	<div id="map"></div>
 	<div id="charts">
