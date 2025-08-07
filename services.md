@@ -55,7 +55,6 @@ Objetivos
             <div class="chart-container">
                 <!--h3>Gráfico de Barras</h3-->
                 <canvas id="barChart" data-img="{{ '/assets/images/tu_imagen.png' | relative_url }}"></canvas>
-                <canvas id="barChart"></canvas>
             </div>
         </div>
 	<!--div align="center" id="tabla_ensoONI"></div-->

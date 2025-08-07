@@ -25,25 +25,35 @@ Papa.parse(csvUrl, {
         // Colocar fondo imagen sacha en grafica de barras
          // 1. Cargar imagen PNG
          //------------------------------------------------------------------------
-         const bgImage = new Image();
-         bgImage.src = '{{ /assets/images/sacha_logo1.png | relative_url }}'; // Asegúrate que esté en la misma carpeta o usa URL
-         
-           // 2. Plugin para dibujar fondo
-           const imageBackgroundPlugin = {
-               id: 'custom_canvas_background_image',
-                   beforeDraw: (chart) => {
-                         if (bgImage.complete) {
-                         	const ctx = chart.ctx;
-                         	const {top, left, width, height} = chart.chartArea;
-                         	ctx.save();
-                         	ctx.globalAlpha = 0.25;
-                         	ctx.drawImage(bgImage, left, top, width, height);
-                         	ctx.restore();
-                         } else {
-                           bgImage.onload = () => chart.draw();
-                           }
-                          }
-                         };
+document.addEventListener("DOMContentLoaded", () => {
+  const canvas = document.getElementById('barChart');
+  const imgSrc = canvas.dataset.img;
+
+  const image = new Image();
+  image.src = imgSrc;
+
+  image.onload = function () {
+    const ctx = canvas.getContext('2d');
+
+    const backgroundImagePlugin = {
+      id: 'customBackgroundImage',
+      beforeDatasetsDraw(chart) {
+        const { ctx, chartArea } = chart;
+        const { left, top, width, height } = chartArea;
+
+        ctx.save();
+        ctx.globalAlpha = 0.1;
+
+        const columnWidth = width / 3;
+        for (let i = 0; i < 3; i++) {
+          const x = left + i * columnWidth + (columnWidth - image.width) / 2;
+          const y = top + (height - image.height) / 2;
+          ctx.drawImage(image, x, y);
+        }
+
+        ctx.restore();
+      }
+    };
 
         // Inicializar el mapa
         const map = L.map('map').setView([-5, -120], 2);
@@ -182,7 +192,7 @@ Papa.parse(csvUrl, {
                      },
             plugins: [imageBackgroundPlugin] 
         });
-
+        });
         // Actualizar gráficos
         //--------------------------------------------------------------
         function updateCharts() {
@@ -214,3 +224,13 @@ Papa.parse(csvUrl, {
         console.error("Error al importar el CSV:", error);
     }
     });
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
