@@ -35,7 +35,7 @@ Objetivos
     3. Promover el uso eficiente del agua y reducir sus péridad
     4. Mitigar los efectos del cambio climático y los desastres naturales
 </p -->
-Tracking the ocean part of El Niño-Southern Oscillation (ENSO) climate pattern,
+<p align="left">Tracking the ocean part of El Niño-Southern Oscillation (ENSO) climate pattern.</p>
 <div class="graficas-container">
 	<div id="map"></div>
 	<div id="charts">
@@ -62,7 +62,7 @@ Tracking the ocean part of El Niño-Southern Oscillation (ENSO) climate pattern,
 </div>
 <!--script src="/static/js/script_mapaENSOv1.js"></script-->
 <!--script src="/static/js/script_mapaENSOv2.js"></script-->
-<script">
+<script>
 // URL del archivo CSV (cámbiala por la tuya)
  //------------------------------------------------------------------------
  const csvUrl = 'https://raw.githubusercontent.com/vrrp/vrrp.github.io/refs/heads/main/assets/data/sstoi.indices.csv'; // Reemplaza con una URL válida
