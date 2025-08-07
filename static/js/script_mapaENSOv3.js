@@ -212,7 +212,6 @@ document.addEventListener("DOMContentLoaded", () => {
         //--------------------------------------------------------------
         updateCharts();
       });
-    }),
     error: function(error) {
         console.error("Error al importar el CSV:", error);
     }
