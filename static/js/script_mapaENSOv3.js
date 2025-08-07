@@ -43,14 +43,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
         ctx.save();
         ctx.globalAlpha = 0.1;
-
-        const columnWidth = width / 3;
-        for (let i = 0; i < 3; i++) {
-          const x = left + i * columnWidth + (columnWidth - image.width) / 2;
-          const y = top + (height - image.height) / 2;
-          ctx.drawImage(image, x, y);
-        }
-
         ctx.restore();
       }
     };

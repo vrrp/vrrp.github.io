@@ -64,6 +64,7 @@ Objetivos
 </div>
 <!--script src="/static/js/script_mapaENSOv1.js"></script-->
 <!--script src="/static/js/script_mapaENSOv2.js"></script-->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <script src="/static/js/script_mapaENSOv3.js"></script>
 
 
