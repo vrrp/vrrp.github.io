@@ -43,11 +43,11 @@ Objetivos
                 <h3>Period of time</h3>
                 <div class="slider-container">
                     <label>Start date: <span id="start-date">1982-01</span></label>
-                    <input type="range" id="start-slider" min="0" max="521" value="0"><!-- max="365"-->
+                    <input type="range" id="start-slider" min="0" max="522" value="0"> <!-- max="365"-->
                 </div>
                 <div class="slider-container">
-                    <label>End date  : <span id="end-date">2025-06</span></label>
-                    <input type="range" id="end-slider" min="0" max="521" value="521">
+                    <label>End date  : <span id="end-date">2025-07</span></label>
+                    <input type="range" id="end-slider" min="0" max="522" value="522">
                 </div>
             </div>
             <div class="chart-container">
