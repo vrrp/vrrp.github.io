@@ -184,7 +184,7 @@ document.addEventListener("DOMContentLoaded", () => {
                      },
             plugins: [imageBackgroundPlugin] 
         });
-        });
+
         // Actualizar gráficos
         //--------------------------------------------------------------
         function updateCharts() {
@@ -211,7 +211,8 @@ document.addEventListener("DOMContentLoaded", () => {
         // Inicializar gráficos
         //--------------------------------------------------------------
         updateCharts();
-    },
+      });
+    }),
     error: function(error) {
         console.error("Error al importar el CSV:", error);
     }
