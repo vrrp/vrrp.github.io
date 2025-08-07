@@ -54,6 +54,7 @@ Objetivos
             </div>
             <div class="chart-container">
                 <!--h3>Gráfico de Barras</h3-->
+                <canvas id="barChart" data-img="{{ '/assets/images/tu_imagen.png' | relative_url }}"></canvas>
                 <canvas id="barChart"></canvas>
             </div>
         </div>
@@ -67,7 +68,7 @@ Objetivos
 <script src="/static/js/script_mapaENSOv3.js"></script>
 
 
-<h4 align="left">Public health monitoring: Anemia case study.</h4>
+<h4 align="left">Public health monitoring: Anemia case study (We are working asap!).</h4>
 <!--script src="/static/js/script_tablaENSO.js"></script-->
 <!--script src="/static/js/plot_timeSeries_ensoIndex.js"></script-->
 <p style="text-align: left;">To visualized our products in <a href="https://vrrp.github.io/login/" style="color:darkmagenta">Monitoring</a>, email us to suscribe.</p>
