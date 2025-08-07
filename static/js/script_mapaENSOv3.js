@@ -26,9 +26,12 @@ Papa.parse(csvUrl, {
          // 1. Cargar imagen PNG
          //------------------------------------------------------------------------
          //const bgImage.src = '/assets/images/sacha_logo1.png'; // Asegúrate que esté en la misma carpeta o usa URL
-         const img_logo = '{{ /assets/images/sacha_logo1.png | relative_url }}'; // Asegúrate que esté en la misma carpeta o usa URL         
+         /*const img_logo = '{{ /assets/images/sacha_logo1.png | relative_url }}'; // Asegúrate que esté en la misma carpeta o usa URL         
          const bgImage = new Image();
-         bgImage.src = img_logo;
+         bgImage.src = img_logo;*/
+         const canvas = document.getElementById('barChart');
+         const imgSrc = canvas.dataset.img;
+
          
          
 
