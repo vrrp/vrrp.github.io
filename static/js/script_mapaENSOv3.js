@@ -31,22 +31,6 @@ Papa.parse(csvUrl, {
          bgImage.src = img_logo;
          
          
-           // 2. Plugin para dibujar fondo
-           const imageBackgroundPlugin = {
-               id: 'custom_canvas_background_image',
-                   beforeDraw: (chart) => {
-                         if (bgImage.complete) {
-                         	const ctx = chart.ctx;
-                         	const {top, left, width, height} = chart.chartArea;
-                         	ctx.save();
-                         	ctx.globalAlpha = 0.25;
-                         	ctx.drawImage(bgImage, left, top, width, height);
-                         	ctx.restore();
-                         } else {
-                           bgImage.onload = () => chart.draw();
-                           }
-                          }
-                         };
 
         // Inicializar el mapa
         const map = L.map('map').setView([-5, -120], 2);
@@ -183,7 +167,6 @@ Papa.parse(csvUrl, {
                         max: 4   // Límite superior del eje Y
                         }}
                      },
-            plugins: [imageBackgroundPlugin] 
         });
 
         // Actualizar gráficos
