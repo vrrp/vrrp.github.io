@@ -1,7 +1,7 @@
 // Lista de usuarios y contraseñas simulada
 const users = [
   { username: "vrojas", email: "vr.rojaspozo@gmail.com", password: "argos@" },
-  { username: "fano", email: "juannolorbe@gmail.com", password: "fano@" },
+  { username: "fano", email: "juannolorbe@gmail.com", password: "chisito@" },
   { username: "user3", email: "user3@example.com", password: "password3" }
 ];
 
