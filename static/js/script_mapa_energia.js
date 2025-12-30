@@ -29,7 +29,7 @@ Papa.parse(csvUrl, {
 
         
         // Inicializar el mapa
-        const map = L.map('map').setView([-5, -90], 2);
+        const map = L.map('map').setView([0, -80], 2);
         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
            // attribution: '© OpenStreetMap contributors'
         }).addTo(map);
