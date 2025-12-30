@@ -1,14 +1,14 @@
 # main text of home
-name: Sacha Analytics
-bio: Data science, big data, regional climate model, remote sensing, and HPC-cluster
-ceo: VR Rojas
+name: Facultad de Ingenieria Eléctrica y Electrónica
+bio: Universidad Nacional del Callao
+ceo: Ciencia y Tecnología del Tercer Milenio
 # twitter summary info
 description: ""
 
 # if it's an external image, update below for true
 # better with square images
 external-image: false
-picture: assets/images/sacha_logo1.png
+picture: assets/images/unac_fie.jpg
 
 # If you want to include your resume, set to true
 # and specify source (external or local).
@@ -29,9 +29,9 @@ permalink: /:title/
 # analytics-piwik-id: 1
 
 # if you don't want comments in your posts, leave categories empty
-disqus:
-  shortname: mydisqus # enter this from your disqus account
-  categories: [training, project, openess] # only show disqus for posts that have these categories
+#disqus:
+#  shortname: mydisqus # enter this from your disqus account
+# categories: [training] #[training, project, openess] # only show disqus for posts that have these categories
 
 # if you don't have any of social below, comment the line
 facebook: false
@@ -42,7 +42,7 @@ instagram: false #roseleblood.official
 # linkedin: mylinkedin
 # youtube: myyoutube
 # spotify: myspotify
-github: vrrp
+#github: vrrp
 # gitlab: mygitlab
 # lastfm: mylastfm
 # stackoverflow: 7044681/mystackoverflow
@@ -51,7 +51,7 @@ github: vrrp
 # medium: medium
 # vimeo: myvimeo
 # lanyrd: mylanyrd
-email: vr.rojaspozo@gmail.com
+#email: vr.rojaspozo@gmail.com
 
 # do you want a larger site? change the option below
 # options: [normal, large] | default: normal
@@ -81,7 +81,7 @@ show-tags: false
 related: false
 
 # Display links for next and previous posts for the specified categories
-post-advance-links: [training]
+#post-advance-links: [training]
 
 # show author block at the end of a post ?
 show-author: true
