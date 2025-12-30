@@ -6,45 +6,19 @@
             </button></li>
         {% endif %}
 
-        {% if site.training == true %}
-            {% if page.title != "Training" %}                
-                   <li class="item"><button class= "btn btn-default navbar-btn">
-                    <a class="link" href="{{ site.url }}/training">Training</a>
-                    </button></li>
-                
-            {% endif %}
-        {% endif %}
-
-        
-        {% if site.projects == true %}
-            {% if page.title != "Projects" %}
-                <li class="item"><button class= "btn btn-default navbar-btn">
-                    <a class="link" href="{{ site.url }}/projects">Projects</a>
-                </button></li>
-            {% endif %}
-        {% endif %}
-
         {% if site.services== true %}
             {% if page.title != "Services" %}
                 <li class="item"><button class= "btn btn-default navbar-btn">
-                    <a class="link" href="{{ site.url }}/services">Services</a>
+                    <a class="link" href="{{ site.url }}/services">Monitoreo</a>
                 </button></li>
             {% endif %}
         {% endif %}
       
-      {% if site.login== true %}
-            {% if page.title != "Login" %}
-                <li class="item"><button class= "btn btn-default navbar-btn">
-                    <a class="link" href="{{ site.url }}/login">Monitoring</a>
-                </button></li>
-            {% endif %}
-        {% endif %}
-
         
         {% if site.about == true %}
             {% if page.title != "About" %}
                 <li class="item"><button class= "btn btn-default navbar-btn">
-                    <a class="link" href="{{ site.url }}/about">About</a>
+                    <a class="link" href="{{ site.url }}/about">Nosotros</a>
                 </button></li>
             {% endif %}
         {% endif %}    
