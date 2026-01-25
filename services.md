@@ -2,37 +2,61 @@
 title: Services
 layout: page
 ---
-<H1 align="left"><span style="font-family:Times New Roman;font-size:150%;color:darkmagenta"><b>Monitoreo Energía Electrica</b></span> </H1>
+<br>
 
-<div class="graficas-container">
-	<div id="map"></div>
-	
-	
-	<div id="charts">
-            <div id="time-range">
-                <!--h3>Rango de tiempo:</h3-->
-                
-                <div class="slider-container">
-                    <label>Inicio: <span id="start-date">1985</span></label>
-                    <input type="range" id="start-slider" min="0" max="40" value="0"> 
-                </div>
-                <div class="slider-container">
-                    <label>Fin: <span id="end-date">2024</span></label>
-                    <input type="range" id="end-slider" min="0" max="40" value="40">
-                </div>
+<!--container superior: indicador, año y filtrar por region-->
+<div class="dashboard-container">
+       <header>
+            <h1>Monitoreo: Energía Electrica</h1>
+       </header>
+        
+       <div class="dashboard-controls">
+            <div class="control-group">
+                <label for="indicador">Indicador</label>
+                <select id="indicador">
+                    <option value="pobreza">Producción total percapita</option>
+                    <option value="educacion">Consumo total percapita</option>
+                    <option value="salud">Acceso a Salud</option>
+                    <option value="economia">Actividad Económica</option>
+                    <option value="clima">Datos Climáticos</option>
+                </select>
             </div>
             
-            <div class="chart-container">
-                <!--h3>Gráfico de Barras</h3-->
-                <canvas id="barChart" data-img="{{ '/assets/images/tu_imagen.png' | relative_url }}"></canvas>
+            <div class="control-group">
+                <label for="anio">Año</label>
+                <select id="anio">
+                    <option value="2023">2023</option>
+                    <option value="2022">2022</option>
+                    <option value="2021">2021</option>
+                    <option value="2020">2020</option>
+                    <option value="2019">2019</option>
+                </select>
             </div>
-    </div>
-</div>
-
-<script src="/static/js/script_mapa_energia.js"></script>
-
-
-
+            
+            <div class="control-group">
+                <label for="region">Filtrar por Región</label>
+                <select id="region">
+                    <option value="todas">Todas las regiones</option>
+                    <option value="SA">Sudamerica</option>
+                    <option value="costa">Costa</option>
+                    <option value="sierra">Sierra</option>
+                    <option value="selva">Selva</option>
+                </select>
+            </div>
+            
+            <div class="control-group">
+                <label>&nbsp;</label>
+                <button id="aplicarFiltros">Aplicar Filtros</button>
+            </div>
+       </div>
+       
+       <!--container grid 3 celdas - medio: mapa, cuva y barras-->
+       <div class="dashboard-content">
+       		<div class="map-container" id="mapa-peru"></div>	
+       		<div class="chart-container" id="grafico-tendencia"></div>
+       		<div class="chart-container" id="grafico-comparativo"></div>
+ </div>
+ <script src="/static/js/script_energiaElectrica.js"></script>
 
 
 
