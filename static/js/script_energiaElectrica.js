@@ -1,69 +1,55 @@
- // Datos de ejemplo para el dashboard
- //----------------------------------------------------------------------------------------------------
+// Datos de los países de Sudamérica con datos en el CSV
+//----------------------------------------------------------------------------------------------------
         const places = [
-            /*{ id: "AMA", nombre: "Amazonas", region: "selva", lat: -5.7007, lon: -77.8609 },
-            { id: "ANC", nombre: "Áncash", region: "sierra", lat: -9.5277, lon: -77.8278 },
-            { id: "APU", nombre: "Apurímac", region: "sierra", lat: -14.0422, lon: -73.0779 },
-            { id: "ARE", nombre: "Arequipa", region: "sierra", lat: -16.3988, lon: -71.5369 },
-            { id: "AYA", nombre: "Ayacucho", region: "sierra", lat: -13.1588, lon: -74.2232 },
-            { id: "CAJ", nombre: "Cajamarca", region: "sierra", lat: -7.1637, lon: -78.5128 },
-            { id: "CUS", nombre: "Cusco", region: "sierra", lat: -13.5226, lon: -71.9673 },
-            { id: "HUV", nombre: "Huancavelica", region: "sierra", lat: -12.7613, lon: -74.9773 },
-            { id: "HUC", nombre: "Huánuco", region: "sierra", lat: -9.9306, lon: -76.2422 },
-            { id: "ICA", nombre: "Ica", region: "costa", lat: -14.0678, lon: -75.7286 },
-            { id: "JUN", nombre: "Junín", region: "sierra", lat: -12.0651, lon: -75.2048 },
-            { id: "LAL", nombre: "La Libertad", region: "costa", lat: -8.1159, lon: -79.0287 },
-            { id: "LAM", nombre: "Lambayeque", region: "costa", lat: -6.7011, lon: -79.9068 },
-            { id: "LIM", nombre: "Lima", region: "costa", lat: -12.0464, lon: -77.0428 },
-            { id: "LOR", nombre: "Loreto", region: "selva", lat: -3.7491, lon: -73.2538 },
-            { id: "MDD", nombre: "Madre de Dios", region: "selva", lat: -12.5933, lon: -69.1892 },
-            { id: "MOQ", nombre: "Moquegua", region: "costa", lat: -17.1983, lon: -70.9356 },
-            { id: "PAS", nombre: "Pasco", region: "sierra", lat: -10.6674, lon: -76.2566 },
-            { id: "PIU", nombre: "Piura", region: "costa", lat: -5.1979, lon: -80.6282 },*/
-            { id: "PUN", nombre: "Puno", region: "sierra", lat: -15.8422, lon: -70.0199 },
-            { id: "SAM", nombre: "San Martín", region: "selva", lat: -6.0329, lon: -76.9714 },
-            { id: "TAC", nombre: "Tacna", region: "costa", lat: -18.0146, lon: -70.2536 },
-            { id: "TUM", nombre: "Tumbes", region: "costa", lat: -3.5669, lon: -80.4515 },
-            { id: "UCA", nombre: "Ucayali", region: "selva", lat: -8.3791, lon: -74.5539 },
-            { id: "CAL", nombre: "Callao", region: "costa", lat: -12.0565, lon: -77.1181 },
-            { id: "PER", nombre: "Peru", region: "SA", lat: -11.042148, lon: -75.043740 },
-            { id: "BRA", nombre: "Brasil", region: "SA", lat: -14.042148, lon: -46.043740 },
-            { id: "COL", nombre: "Colombia", region: "SA", lat: 4.042148, lon: -74.343740}
+            { id: "PER", nombre: "Peru",     region: "SA", lat: -11.042148, lon: -75.043740 },
+            { id: "BRA", nombre: "Brasil",   region: "SA", lat: -14.042148, lon: -46.043740 },
+            { id: "COL", nombre: "Colombia", region: "SA", lat:   4.042148, lon: -74.343740 }
         ];
 
-        // Datos simulados para cada place
-        function generarDatosSimulados() {
-            const indicadores = {
-                pobreza: { nombre: "Producción total percapita", unidad: "kwh" },
-                educacion: { nombre: "Consumo total percapita", unidad: "kwh" },
-                salud: { nombre: "Acceso a Salud", unidad: "% de cobertura" },
-                economia: { nombre: "Actividad Económica", unidad: "PBI regional (MM S/)" },
-                clima: { nombre: "Precipitación", unidad: "mm/year" }
-            };
-            
-            const years = ["2019", "2020", "2021", "2022", "2023"];
-            const datos = {};
-            
-            Object.keys(indicadores).forEach(indicador => {
-                datos[indicador] = {};
-                places.forEach(dep => {
-                    datos[indicador][dep.id] = {};
-                    let baseValue = Math.random() * 100;
-                    
-                    // Para cada year, generamos un valor con cierta tendencia
-                    years.forEach((year, i) => {
-                        // Añadimos variación con tendencia de mejora o empeoramiento
-                        const tendencia = (Math.random() - 0.3) * 10;
-                        baseValue = Math.max(0, Math.min(100, baseValue + tendencia));
-                        datos[indicador][dep.id][year] = parseFloat(baseValue.toFixed(1));
-                    });
+        // Variables globales que se llenarán con los datos del CSV
+        let datos = {};
+        let indicadores = {};
+
+        // Parsea el texto de un CSV en un array de objetos
+        function parseCSV(text) {
+            const lines = text.trim().split('\n');
+            const headers = lines[0].split(',').map(h => h.trim());
+            return lines.slice(1).map(line => {
+                const values = line.split(',');
+                const obj = {};
+                headers.forEach((header, i) => {
+                    obj[header] = values[i] ? values[i].trim() : '';
                 });
-            });
-            
-            return { datos, indicadores };
+                return obj;
+            }).filter(row => row.Year !== '');
         }
 
-        const { datos, indicadores } = generarDatosSimulados();
+        // Carga y procesa el CSV para construir datos e indicadores
+        async function cargarDatosCSV() {
+            const response = await fetch('/assets/data/energia_electrica.csv');
+            const text = await response.text();
+            const rows = parseCSV(text);
+
+            indicadores = {
+                generacion: { nombre: "Generación Eléctrica per cápita", unidad: "kwh" }
+            };
+
+            datos = { generacion: { PER: {}, BRA: {}, COL: {} } };
+
+            rows.forEach(row => {
+                const year = row.Year;
+                datos.generacion.PER[year] = parseFloat(row.Peru_Generation_kwh);
+                datos.generacion.BRA[year] = parseFloat(row.Brazil_Generation_kwh);
+                datos.generacion.COL[year] = parseFloat(row.Colombia_Generation_kwh);
+            });
+
+            // Poblar el selector de año dinámicamente con los años del CSV (desc)
+            const years = rows.map(r => r.Year).sort((a, b) => b - a);
+            const anioSelect = document.getElementById('anio');
+            anioSelect.innerHTML = years
+                .map(y => `<option value="${y}">${y}</option>`)
+                .join('');
+        }
 
         // Funciones para dibujar el mapa y los gráficos
        //----------------------------------------------------------------------------------------------------
@@ -87,7 +73,8 @@
                 text: places.map(d => d.nombre),
                 hovertemplate: places.map(d => 
                     `<b>${d.nombre}</b><br>` +
-                    `${indicadores[indicador].nombre}: ${datosDeIndicador[d.id][year]} ${indicadores[indicador].unidad}`
+                    //`${indicadores[indicador].nombre}: ${datosDeIndicador[d.id][year]} ${indicadores[indicador].unidad}`
+                    ` ${datosDeIndicador[d.id][year]} ${indicadores[indicador].unidad}`
                 ),
                 marker: {
                     size: 12,
@@ -159,7 +146,7 @@
         }
         
         function dibujarGraficoTendencia(depId, indicador) {
-            const years = ["2019", "2020", "2021", "2022", "2023"];
+            const years = Object.keys(datos[indicador][depId]).sort();
             const place = places.find(d => d.id === depId);
             const datosIndicador = datos[indicador][depId];
             
@@ -258,7 +245,9 @@
         
         // Inicializar dashboard
        //----------------------------------------------------------------------------------------------------
-        function inicializarDashboard() {
+        async function inicializarDashboard() {
+            await cargarDatosCSV();
+
             const indicador = document.getElementById('indicador').value;
             const year = document.getElementById('anio').value;
             
