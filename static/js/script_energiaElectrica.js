@@ -169,7 +169,8 @@
             
             const layout = {
                 title: {
-                    text: `Tendencia de ${indicadores[indicador].nombre} en ${place.nombre}`,
+                    //text: `Tendencia de ${indicadores[indicador].nombre} en ${place.nombre}`,
+                    text: `Tendencia en ${place.nombre}`,
                     font: {
                         size: 14
                     }
@@ -216,7 +217,8 @@
             
             const layout = {
                 title: {
-                    text: `Comparación regional - ${indicadores[indicador].nombre} (${year})`,
+                    //text: `Comparación regional - ${indicadores[indicador].nombre} (${year})`,
+                    text: `Comparación regional -  ${year}`,
                     font: {
                         size: 14
                     }
